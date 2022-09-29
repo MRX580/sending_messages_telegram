@@ -9,7 +9,7 @@ from aiogram.dispatcher.filters import Text
 
 markup = ReplyKeyboardMarkup(resize_keyboard=True, row_width=1, one_time_keyboard=True)
 markup.add('Начать!')
-
+#
 
 async def spam(target_channel, message, bot, chat_id):
     async with TelegramClient('name', 12345678, 'API_HASH') as client:  # 1 session name 2 api_id 3 api_hash
